@@ -28,7 +28,7 @@ async def say(ctx):
         await client.say(bh)
 
 
-
+# TODO: Make a function that does all this stuff.
 @client.event
 async def on_message(message):
     if message.channel.is_private:
@@ -86,7 +86,4 @@ async def on_message(message):
 @client.command()
 async def ping():
     await client.say("Pong!")
-
-
-
 client.run(config.api_key)
