@@ -88,11 +88,5 @@ async def ping():
     await client.say("Pong!")
 
 
-@client.command(pass_context=True)
-async def free_agent():
-    f = open("freeagency.txt","a+")
-    for i in range(2):
-        f.write("hello\n")
-
 
 client.run(config.api_key)
